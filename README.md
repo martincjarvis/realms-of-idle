@@ -1,3 +1,29 @@
+<!-- PORTFOLIO-BANNER:START -->
+> **🗂️ Portfolio archive — .NET idle/incremental game (experiment, C#).** A spec-driven prototype of a multi-scenario idle RPG. Part of a consolidated set of my personal repositories and **not actively maintained**.
+
+<details>
+<summary><b>📋 Self-review — 5 good practices &amp; 5 things I'd improve</b></summary>
+
+**✅ Good practices demonstrated**
+1. Spec-driven development using GitHub spec-kit (`.specify` / `specs`) with design intent captured up front.
+2. Layered solution with a dedicated tests project and Testcontainers for integration testing.
+3. Modern .NET setup — `.slnx` solution, central package management, and `global.json` SDK pinning.
+4. Automated quality gates: Husky, commitlint, Prettier, markdownlint and link-checking.
+5. Rich documentation describing the game's systems and architecture.
+
+**⚠️ Weaknesses / what I'd do differently today**
+1. Build/migration logs (`migrate-stderr.log`, `migrate-stdout.log`) were committed to the repo root — they belong in `.gitignore`.
+2. Environment-specific run scripts (`.bat` / `.sh` duplicates for WSL) committed rather than documented.
+3. 1000+ files for an unfinished experiment — scope ran well ahead of completion.
+4. A Node.js tooling layer wrapped around a .NET game increases setup complexity.
+5. The README is vision-heavy but light on "how to build and play" for a newcomer.
+
+</details>
+
+---
+<!-- PORTFOLIO-BANNER:END -->
+
+
 # Realms of Idle
 
 A multi-scenario idle RPG where players build interconnected fantasy enterprises—from cozy inns to sprawling empires—in a world where Classes, Levels, and the System govern all.
